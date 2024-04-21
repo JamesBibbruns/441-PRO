@@ -2,11 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensure body takes up at least the full height of the viewport */
-    position: relative; /* Necessary for footer positioning */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
 
 .cart-container {
+    flex: 1;
     width: 80%;
     margin: 0 auto;
 }
@@ -15,11 +24,12 @@ body {
     background-color: #f2f2f2;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .cart-items th, .cart-items td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: left;
 }
 
@@ -36,33 +46,26 @@ body {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 8px 16px;
+    padding: 12px 24px;
     text-decoration: none;
-    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.shopping-cart {
+    margin-top: 20px;
 }
 
 .total {
     font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .shopping-cart table td {
     padding-right: 20px;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed; /* Change position to fixed */
-    bottom: 0;
-    width: 100%;
+    flex-shrink: 0;
 }
