@@ -44,3 +44,12 @@ header {
     text-align: center;
     padding: 1em;
 }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
