@@ -35,3 +35,6 @@
   .total {
     font-weight: bold;
   }
+.shopping-cart table td {
+  padding-right: 20px;
+}
